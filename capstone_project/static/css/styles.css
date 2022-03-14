@@ -1,0 +1,454 @@
+/* ===================================== 
+    FONT THEME:
+font-family: 'Comic Neue', cursive;
+____________________________________
+
+    COLOR THEME:
+ming : #006D77
+middle blue green : #83C5BE
+alice blue : #EDF6F9
+unbleached silk : #FFDDD2
+dark salmon : #E29578
+========================================= */
+
+/* ==================== NAV BAR STYLING ====================*/
+.ct-nav{
+    display: flex;
+    justify-content: space-between;
+    background: #EDF6F9;
+}
+
+/* Target Main Logo Image */
+.ct-nav img{
+    width: 60%;
+    max-width: 100%;
+    margin-left: 55px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ul#horizontal-list{
+    min-width: 450px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    color: #006D77;
+}
+
+/* ==================== HTML, BODY ====================*/
+html, body{
+    height: 100%;
+}
+
+body{
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Just Another Hand', cursive;
+}
+
+p{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section{
+    background: #fff;
+    overflow: hidden;
+}
+
+/*==================== PRELOADER ====================*/
+#preloader{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status{
+    background-image: url(../images/preloader_triangles.gif);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    /* left: 50%; */
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+/*==================== HOME PAGE VISUALS ====================*/
+#Home{
+    background: none;
+    height: 100%;
+}
+
+#home-video{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: 90%;
+    height: 150%;
+    /*below ensures the background image always stays behind */
+    z-index: -1; 
+    background-size: cover;
+}
+
+#home-overlay{
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-content{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1{
+    color: #EDF6F9;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 0px;
+    /* display: inline-block; */
+}
+
+#home-heading h1 span{
+    color: #FFEE93;
+    font-weight: 500;
+}
+
+#home-text p{
+    color: #E29578;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+/*==================== HOME PAGE BUTTON ====================*/
+.btn-general{
+    font-family: 'Just Another Hand', cursive;
+    border-radius: 28px;
+    border-color: black;
+    font-size: 13px;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home{
+    color: #FFEE93;
+    border: 1px solid #FFEE93;
+}
+
+/* .btn-home:hover, .btn-home:focus{
+    color: rgb(129, 123, 123);
+    background-color: rgb(252, 249, 62);
+    border: 1px solid rgb(252, 249, 62);
+} */
+
+/*==================== DOWN ARROW ON HOME PAGE ====================*/
+#down-arrow{
+    position:absolute;
+    left: 50%;
+    bottom: 20px;
+    color: white;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    z-index: 1;
+}
+
+#down-arrow:hover, #down-arrow:focus{
+    color: rgb(252, 249, 62);
+}
+
+/*==================== ABOUT US SECTION 1 ====================*/
+.content-box-lg{
+    padding: 50px 0;
+}
+
+/* Quienes Somos Text */
+.vertical-heading h5{
+    color: #E29578;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg); 
+    transform: rotate(-90deg);
+    position: relative;
+    top: 70px;
+    left: -60px;
+
+}
+
+.vertical-heading h2{
+    margin: 0 0 0 30px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    /* padding: 5px; */
+}
+
+#pictures{
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+figcaption{
+    margin-left: 22%;
+}
+
+    
+/*==================== ABOUT US SECTION 2 ====================*/
+#about-bottom{
+    background-color: #EDF6F9 ;
+}
+
+.content-box-md{
+    padding: 25px 0;
+}
+
+/* about outside boxes */
+.about-item{
+    background-color: whitesmoke;
+    padding: 80px 30px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .2);
+}
+
+.about-item i{
+    margin: 0;
+}
+
+/* headings */
+.about-item h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* border line */
+.about-item hr{
+    width: 150px;
+    height: 8px;
+    background-color: #FFC09F;
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item p{
+    margin-top: 20px;
+}
+
+/* Hovering over about boxes */
+.about-item:hover{
+    background-color: #83C5BE;
+}
+
+.about-item:hover h3, .about-item:hover p {
+    color: whitesmoke;
+}
+
+.about-item:hover hr{
+    background-color: #EDF6F9;
+}
+
+/* smooth transitioning */
+.about-item, .about-item i, .about-item hr{
+    -webkit-transition: all 400ms ease-in-out; 
+    transition: all 400ms ease-in-out;
+
+}
+
+/*==================== ACTIVITIES SECTION ==================== */
+
+/* Tabs section */
+#activities-options-tabs ul{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
+}
+
+#activities-options-tabs ul li{
+    padding: 5px 30px;
+}
+
+#activities-options-tabs ul li a{
+    font-family:'Comic Neue', cursive;
+    font-size: 17px;
+    color: #006D77;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Active state of tabs */
+/* styling for when the tab is selected */
+#activities-options-tabs ul li.r-tabs-state-active a{
+    color: #E29578;
+    font-weight: 900;
+    border-bottom: 3px solid #E29578;
+    padding-bottom: 5px;
+}
+
+/* Picture styling to all look the same */
+#activities-options-tabs img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Text section "container" */
+#activities-options-tabs .tab-bg{
+    padding: 30px 30px;
+    /* background-color: red; */
+    min-height: 369px;
+}
+
+/* Activity heading and paragraph */
+#activities-options-tabs h3{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#activities-options-tabs p{
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+/* Activities Button */
+.btn-activity{
+    color: #EDF6F9;
+    background-color: #E29578;
+    border: 1px solid #E29578;
+}
+
+.btn-activity:hover, .btn-activity:focus{
+    color: #EDF6F9;
+    background-color: #006D77;
+    border: 1px solid #006D77;
+}
+
+/*==================== CONTACT US SECTION ==================== */
+
+#contact{
+    background-color: #EDF6F9;
+}
+
+/* Left side */
+#contact-left p{
+    margin: 25px 0 20px 0;
+}
+
+/* Right side */
+#contact-right{
+    background: white;
+    padding: 25px 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    border-radius: 25px;
+}
+
+#contact-right h4{
+    font-size: 24px;
+}
+
+#contact-right p {
+    margin-bottom: 25px;
+}
+
+.col-md-12{
+    padding: 10px 12px;
+}
+
+#contact-right .form-control{
+    font-family:'Comic Neue', cursive;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#contact-right textarea.form-control{
+    min-height: 75px;
+    margin-bottom: 15px;
+}
+
+/*==================== FOOTER SECTION ==================== */
+footer{
+    background: whitesmoke;
+    padding: 30px;
+}
+
+footer p{
+    color: #006D77;
+    line-height: 20px;
+}
+
+footer p span{
+    color: #E29578;
+}
+
+/*==================== ACTIVITY PAGES ==================== */
+#activities-page{
+    margin-top: 25px;
+}
+
+/* Picture styling to all look the same */
+#activities-page img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Text section "container" */
+#activities-page .tab-bg{
+    padding: 30px 30px;
+    /* background-color: red; */
+    min-height: 369px;
+}
+
+/* Activity heading and paragraph */
+#activities-page h3{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#activities-page p{
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.img-responsive{
+    padding: 25px;
+}
